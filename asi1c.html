@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for additional styling */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h1, h2, h3 {
+            color: #ff0000;
+        }
+        select.form-control {
+            border-color: #007bff;
+        }
+        select.form-control:focus {
+            border-color: #007bff;
+            box-shadow: none;
+        }
+        #span_result {
+            margin-top: 20px;
+            border: 1px solid #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">Ajax File Viewer</h1>
+        <p class="lead">Select a file to display its contents:</p> 
+        <div class="form-group">
+            <select class="form-control" name="files" onchange="sayHello(this.value)">
+                <option value="">Select a file</option>
+                <option value="file.txt">file.txt</option>
+                <option value="file2.txt">file2.txt</option>
+                <!-- <option value="index.html">index.html</option> -->
+            </select>
+        </div>
+        <div id="span_result"></div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Your JavaScript code here
+        function getXmlHttpRequestObject() {
+            if (window.XMLHttpRequest) {
+                return new XMLHttpRequest(); // Not IE
+            } else if (window.ActiveXObject) {
+                return new ActiveXObject("Microsoft.XMLHTTP"); // IE
+            } else {
+                alert("Your browser doesn't support the XmlHttpRequest object. Better upgrade to Firefox.");
+            }
+        }           
+        var receiveReq = getXmlHttpRequestObject();     
+        function sayHello(fname) {
+            if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+                receiveReq.open("GET", fname, true);
+                receiveReq.onreadystatechange = handleSayHello; 
+                receiveReq.send(null);
+            }           
+        }
+        function handleSayHello() {
+            if (receiveReq.readyState == 4) {
+                document.getElementById('span_result').innerHTML = receiveReq.responseText;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+History
+Creation at Netscape
+The first popular web browser with a graphical user interface, Mosaic, was released in 1993. Accessible to non-technical people, it played a prominent role in the rapid growth of the early World Wide Web.[12] The lead developers of Mosaic then founded the Netscape corporation, which released a more polished browser, Netscape Navigator, in 1994. This quickly became the most-used.[13]
+
+During these formative years of the Web, web pages could only be static, lacking the capability for dynamic behavior after the page was loaded in the browser. There was a desire in the flourishing web development scene to remove this limitation, so in 1995, Netscape decided to add a scripting language to Navigator. They pursued two routes to achieve this: collaborating with Sun Microsystems to embed the Java programming language, while also hiring Brendan Eich to embed the Scheme language.[6]
+
+The original goal was a "language for the masses",[14] "to help nonprogrammers create dynamic, interactive Web sites".[15] In this vein, Netscape management soon decided that the best option was for Eich to devise a new language, with syntax similar to Java and less like Scheme or other extant scripting languages.[5][6] Although the new language and its interpreter implementation were called LiveScript when first shipped as part of a Navigator beta in September 1995, the name was changed to JavaScript for the official release in December.[6][1][16]
+
+The choice of the JavaScript name has caused confusion, implying that it is directly related to Java. At the time, the dot-com boom had begun and Java was a popular new language, so Eich considered the JavaScript name a marketing ploy by Netscape.[14]
+
+Adoption by Microsoft
+Microsoft debuted Internet Explorer in 1995, leading to a browser war with Netscape. On the JavaScript front, Microsoft reverse-engineered the Navigator interpreter to create its own, called JScript.[17]
+
+Microsoft first released JScript in 1996, alongside initial support for CSS and extensions to HTML. Each of these implementations was noticeably different from their counterparts in Navigator.[18][19] These differences made it difficult for developers to make their websites work well in both browsers, leading to widespread use of "best viewed in Netscape" and "best viewed in Internet Explorer" logos for several years.[18][20]
+
+The rise of JScript
+In November 1996, Netscape submitted JavaScript to Ecma International, as the starting point for a standard specification that all browser vendors could conform to. This led to the official release of the first ECMAScript language specification in June 1997.
+
+The standards process continued for a few years, with the release of ECMAScript 2 in June 1998 and ECMAScript 3 in December 1999. Work on ECMAScript 4 began in 2000.[17]
+
+Meanwhile, Microsoft gained an increasingly dominant position in the browser market. By the early 2000s, Internet Explorer's market share reached 95%.[21] This meant that JScript became the de facto standard for client-side scripting on the Web.
+
+Microsoft initially participated in the standards process and implemented some proposals in its JScript language, but eventually it stopped collaborating on Ecma work. Thus ECMAScript 4 was mothballed.
+
+Growth and standardization
+During the period of Internet Explorer dominance in the early 2000s, client-side scripting was stagnant. This started to change in 2004, when the successor of Netscape, Mozilla, released the Firefox browser. Firefox was well received by many, taking significant market share from Internet Explorer.[22]
+
+In 2005, Mozilla joined ECMA International, and work started on the ECMAScript for XML (E4X) standard. This led to Mozilla working jointly with Macromedia (later acquired by Adobe Systems), who were implementing E4X in their ActionScript 3 language, which was based on an ECMAScript 4 draft. The goal became standardizing ActionScript 3 as the new ECMAScript 4. To this end, Adobe Systems released the Tamarin implementation as an open source project. However, Tamarin and ActionScript 3 were too different from established client-side scripting, and without cooperation from Microsoft, ECMAScript 4 never reached fruition.
+
+Meanwhile, very important developments were occurring in open-source communities not affiliated with ECMA work. In 2005, Jesse James Garrett released a white paper in which he coined the term Ajax and described a set of technologies, of which JavaScript was the backbone, to create web applications where data can be loaded in the background, avoiding the need for full page reloads. This sparked a renaissance period of JavaScript, spearheaded by open-source libraries and the communities that formed around them. Many new libraries were created, including jQuery, Prototype, Dojo Toolkit, and MooTools.
+
+Google debuted its Chrome browser in 2008, with the V8 JavaScript engine that was faster than its competition.[23][24] The key innovation was just-in-time compilation (JIT),[25] so other browser vendors needed to overhaul their engines for JIT.[26]
+
+In July 2008, these disparate parties came together for a conference in Oslo. This led to the eventual agreement in early 2009 to combine all relevant work and drive the language forward. The result was the ECMAScript 5 standard, released in December 2009.
+
+Reaching maturity
+Ambitious work on the language continued for several years, culminating in an extensive collection of additions and refinements being formalized with the publication of ECMAScript 6 in 2015.[27]
+
+The creation of Node.js in 2009 by Ryan Dahl sparked a significant increase in the usage of JavaScript outside of web browsers. Node combines the V8 engine, an event loop, and I/O APIs, thereby providing a stand-alone JavaScript runtime system.[28][29] As of 2018, Node had been used by millions of developers,[30] and npm had the most modules of any package manager in the world.[31]
+
+The ECMAScript draft specification is currently[as of?] maintained openly on GitHub, and editions are produced via regular annual snapshots.[32] Potential revisions to the language are vetted through a comprehensive proposal process.[33][34] Now, instead of edition numbers, developers check the status of upcoming features individually.[32]
+
+The current JavaScript ecosystem has many libraries and frameworks, established programming practices, and substantial usage of JavaScript outside of web browsers. Plus, with the rise of single-page applications and other JavaScript-heavy websites, several transpilers have been created to aid the development process.[35]
+
+Trademark
+"JavaScript" is a trademark of Oracle Corporation in the United States.[36][37] The trademark was originally issued to Sun Microsystems on 6 May 1997, and was transferred to Oracle when they acquired Sun in 2009.[38]
+
+Website client-side usage
+JavaScript is the dominant client-side scripting language of the Web, with 98% of all websites (mid–2022) using it for this purpose.[39] Scripts are embedded in or included from HTML documents and interact with the DOM.
+
+All major web browsers have a built-in JavaScript engine that executes the code on the user's device.
+
+Examples of scripted behavior
+Loading new web page content without reloading the page, via Ajax or a WebSocket. For example, users of social media can send and receive messages without leaving the current page.
+Web page animations, such as fading objects in and out, resizing, and moving them.
+Playing browser games.
+Controlling the playback of streaming media.
+Generating pop-up ads or alert boxes.
+Validating input values of a web form before the data is sent to a web server.
+Logging data about the user's behavior then sending it to a server. The website owner can use this data for analytics, ad tracking, and personalization.
+Redirecting a user to another page.
+Storing and retrieving data on the user's device, via the storage or IndexedDB standards.
+Web libraries and frameworks
+By 2012, over 80% of websites used a third-party JavaScript library or web framework for their client-side scripting.[40]
+
+React
+These paragraphs are an excerpt from React (software).[edit]
+React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[41][42] for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.[43][44][45]
+
+React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[46][47] A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements.
+Angular
+These paragraphs are an excerpt from Angular (web framework).[edit]
+Angular (also referred to as "Angular 2+")[48] is a TypeScript-based, free and open-source single-page web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+jQuery
+Main article: jQuery
+In 2012, jQuery was by far the most popular client-side library, used by over 75% of websites.[40] While still in widespread use, its popularity has been surpassed by newer libraries and frameworks.
+
+Vanilla JS
+The framework-like moniker "Vanilla JS" is just another name for plain old JavaScript. It has been coined for websites not using any libraries or frameworks at all, instead relying entirely on standard JavaScript functionality.[49] Example of usage: "What framework do you use?" "Oh, we use Vanilla JS."
+
+The term is included here to avoid confusion.
+
+Other usage
+The use of JavaScript has expanded beyond its web browser roots. JavaScript engines are now embedded in a variety of other software systems, both for server-side website deployments and non-browser applications.
+
+Initial attempts at promoting server-side JavaScript usage were Netscape Enterprise Server and Microsoft's Internet Information Services,[50][51] but they were small niches.[52] Server-side usage eventually started to grow in the late 2000s, with the creation of Node.js and other approaches.[52]
+
+Electron, Cordova, React Native, and other application frameworks have been used to create many applications with behavior implemented in JavaScript. Other non-browser applications include Adobe Acrobat support for scripting PDF documents[53] and GNOME Shell extensions written in JavaScript.[54]
+
+JavaScript has recently begun to appear in some embedded systems, usually by leveraging Node.js.[55][56][57]
+
+Execution system
+Just-in-time compilation
+JavaScript engine
+This section is an excerpt from JavaScript engine.[edit]
+A JavaScript engine is a software component that executes JavaScript code. The first JavaScript engines were mere interpreters, but all relevant modern engines use just-in-time compilation for improved performance.[58]
+
+JavaScript engines are typically developed by web browser vendors, and every major browser has one. In a browser, the JavaScript engine runs in concert with the rendering engine via the Document Object Model.
+
+The use of JavaScript engines is not limited to browsers. For example, the V8 engine is a core component of the Node.js and Deno runtime systems.
+
+Since ECMAScript is the standardized specification of JavaScript, ECMAScript engine is another name for these engines. With the advent of WebAssembly, some engines can also execute this code in the same sandbox as regular JavaScript code.
+Run-time environment
+JavaScript typically relies on a run-time environment (e.g., a web browser) to provide objects and methods by which scripts can interact with the environment (e.g., a web page DOM). These environments are single-threaded. JavaScript also relies on the run-time environment to provide the ability to include/import scripts (e.g., HTML <script> elements). This is not a language feature per se, but it is common in most JavaScript implementations. JavaScript processes messages from a queue one at a time. JavaScript calls a function associated with each new message, creating a call stack frame with the function's arguments and local variables. The call stack shrinks and grows based on the function's needs. When the call stack is empty upon function completion, JavaScript proceeds to the next message in the queue. This is called the event loop, described as "run to completion" because each message is fully processed before the next message is considered. However, the language's concurrency model describes the event loop as non-blocking: program input/output is performed using events and callback functions. This means, for instance, that JavaScript can process a mouse click while waiting for a database query to return information.[59]
+
+Examples
+Node.js
+These paragraphs are an excerpt from Node.js.[edit]
+Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.
+Deno
+These paragraphs are an excerpt from Deno (software).[edit]
+Deno /diːnoʊ/[60] is a runtime for JavaScript, TypeScript, and WebAssembly that is based on the V8 JavaScript engine and the Rust programming language. Deno was co-created by Ryan Dahl, who also created Node.js.[61]
